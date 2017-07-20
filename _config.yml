@@ -1,9 +1,9 @@
-title: Hexo
-subtitle: "A fast, simple & powerful blog framework powered by Node.js."
-description: "Hexo is a fast, simple & powerful blog framework powered by Node.js."
-author: Tommy Chen
+title: 老吴博客
+subtitle: "一个初三人的博客"
+description: "这是一个与IT,学生经历有关的一个初三逗比的博客"
+author: wuhang2003
 language: zh-Hans
-timezone: UTC
+timezone: UTC+8
 
 url: https://hexo.io
 root: /
