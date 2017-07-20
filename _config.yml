@@ -3,7 +3,7 @@ subtitle: "一个初三人的博客"
 description: "这是一个与IT,学生经历有关的一个初三逗比的博客"
 author: wuhang2003
 language: zh-Hans
-timezone: UTC+8
+timezone: UTC
 
 url: https://hexo.io
 root: /
