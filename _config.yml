@@ -3,7 +3,7 @@ subtitle: "一个初三人的博客"
 description: "这是一个与IT,学生经历有关的一个初三逗比的博客"
 author: wuhang2003
 language: zh-Hans
-timezone: UTC
+timezone: PRC
 
 url: https://hexo.io
 root: /
@@ -28,15 +28,11 @@ google_analytics: UA-48498357-3
 google_adsense: ca-pub-9461880259118621
 fb_admins: 100000247608790
 algolia:
-  en:
-    api_key: c3d5d4c995b5e0c2ffb5623900279a66
-    index_name: hexo
-  zh-tw:
-    api_key: c83d2ec3440f40aec6d0e695ecec7ef3
-    index_name: hexo_zh-tw
-  zh-cn:
-    api_key: cdea7d4e47d84f6145b77e7f68689f35
-    index_name: hexo_zh-cn
+  applicationID: 'A1T2092KTO'
+  apiKey: '428fa2627dd57f046729b301b991fa15'
+  adminApiKey: '25feee5e501adb81aeca6e18bccfd7e3'
+  indexName: 'wuhang2003'
+  chunkSize: 5000
 twitter: hexojs
 weibo: hexojs
 github: hexojs/hexo
