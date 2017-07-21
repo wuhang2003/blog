@@ -324,7 +324,7 @@ disqus:
 gitment:
   enable: true
   githubID: 17929366
-  repo: issue
+  repo: blog
   ClientID: d278a2fdfde64d6135eb
   ClientSecret: 05436187d86d9c8f6758607e5f0f5d9b7e05d913
   lazy: false
