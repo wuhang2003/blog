@@ -44,7 +44,3 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
   
-
-twitter: hexojs
-weibo: hexojs
-github: hexojs/hexo
