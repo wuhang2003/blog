@@ -618,6 +618,8 @@ vendors:
   # https://github.com/ethantw/Han
   han:
 
+highqilai: 
+  enabled: true
 
 # Assets
 css: css

@@ -39,6 +39,11 @@ deploy:
 highlight:
   enable: true
   line_number: false
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+  
 
 twitter: hexojs
 weibo: hexojs
