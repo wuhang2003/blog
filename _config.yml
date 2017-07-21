@@ -14,6 +14,12 @@ new_post_name: :year-:month-:day-:title.md # File name of new posts
 post_asset_folder: true
 per_page: 0
 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
 index_generator:
   per_page: 5
 
@@ -34,16 +40,6 @@ highlight:
   enable: true
   line_number: false
 
-disqus_shortname: hexojs
-google_analytics: UA-48498357-3
-google_adsense: ca-pub-9461880259118621
-fb_admins: 100000247608790
-algolia:
-  applicationID: 'A1T2092KTO'
-  apiKey: '428fa2627dd57f046729b301b991fa15'
-  adminApiKey: '25feee5e501adb81aeca6e18bccfd7e3'
-  indexName: 'wuhang2003'
-  chunkSize: 5000
 twitter: hexojs
 weibo: hexojs
 github: hexojs/hexo
