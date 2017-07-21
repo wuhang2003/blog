@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "cheerio": "^0.20.0",
+    "gitment": "0.0.3",
     "hexo": "github:hexojs/hexo",
     "hexo-algolia": "^1.1.0",
     "hexo-deployer-git": "^0.1.0",
