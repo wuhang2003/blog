@@ -34,7 +34,7 @@ tag_generator:
 theme: next
 deploy:
   type: git
-  repo: git@github.com:hexojs/hexojs.github.io.git
+  repo: git@git.coding.net:wuhang2003/wuhang2003.coding.me.git
 
 highlight:
   enable: true
