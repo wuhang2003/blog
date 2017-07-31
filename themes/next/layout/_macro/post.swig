@@ -24,11 +24,11 @@
     {% if not headlessPost %}
       <header class="post-header">
 
-        {# Not to show title for quote posts that do not have a title #}
+        {<i class="fa fa-tag"></i> Not to show title for quote posts that do not have a title <i class="fa fa-tag"></i>}
         {% if not (is_index and post.type === 'quote' and not post.title) %}
-          <{% if theme.seo %}h2{% else %}h1{% endif %} class="post-title" itemprop="name headline">{#
-          #}{# Link posts #}{#
-          #}{% if post.link %}
+          <{% if theme.seo %}h2{% else %}h1{% endif %} class="post-title" itemprop="name headline">{<i class="fa fa-tag"></i>
+          <i class="fa fa-tag"></i>}{<i class="fa fa-tag"></i> Link posts <i class="fa fa-tag"></i>}{<i class="fa fa-tag"></i>
+          <i class="fa fa-tag"></i>}{% if post.link %}
               {% if post.sticky > 0 %}
                 {{ post.sticky }}
                 <span class="post-sticky-flag" title="{{ __('post.sticky') }}">
@@ -39,19 +39,19 @@
                 {{ post.title or post.link }}
                 <i class="fa fa-external-link"></i>
               </a>
-            {% else %}{#
-            #}{% if is_index %}
+            {% else %}{<i class="fa fa-tag"></i>
+            <i class="fa fa-tag"></i>}{% if is_index %}
                 {% if post.sticky > 0 %}
                   <span class="post-sticky-flag" title="{{ __('post.sticky') }}">
                     <i class="fa fa-thumb-tack"></i>
                   </span>
                 {% endif %}
-                <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">{#
-                #}{{ post.title | default(__('post.untitled'))}}{#
-              #}</a>{#
-            #}{% else %}{{ post.title }}{% endif %}{#
-          #}{% endif %}{#
-        #}</{% if theme.seo %}h2{% else %}h1{% endif %}>
+                <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">{<i class="fa fa-tag"></i>
+                <i class="fa fa-tag"></i>}{{ post.title | default(__('post.untitled'))}}{<i class="fa fa-tag"></i>
+              <i class="fa fa-tag"></i>}</a>{<i class="fa fa-tag"></i>
+            <i class="fa fa-tag"></i>}{% else %}{{ post.title }}{% endif %}{<i class="fa fa-tag"></i>
+          <i class="fa fa-tag"></i>}{% endif %}{<i class="fa fa-tag"></i>
+        <i class="fa fa-tag"></i>}</{% if theme.seo %}h2{% else %}h1{% endif %}>
         {% endif %}
 
         <div class="post-meta">
@@ -118,7 +118,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
+                <a href="{{ url_for(post.path) }}<i class="fa fa-tag"></i>comments" itemprop="discussionUrl">
                   <span class="post-comments-count ds-thread-count" data-thread-key="{{ post.path }}" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -128,7 +128,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
+                <a href="{{ url_for(post.path) }}<i class="fa fa-tag"></i>comments" itemprop="discussionUrl">
                   <span class="post-comments-count fb-comments-count" data-href="{{ post.permalink }}" itemprop="commentCount">0</span> comments
                 </a>
               </span>
@@ -138,7 +138,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
+                <a href="{{ url_for(post.path) }}<i class="fa fa-tag"></i>comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
                         data-disqus-identifier="{{ post.path }}" itemprop="commentCount"></span>
                 </a>
@@ -150,7 +150,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
+                <a href="{{ url_for(post.path) }}<i class="fa fa-tag"></i>comments" itemprop="discussionUrl">
                   <span class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
                 </a>
               </span>
@@ -162,18 +162,18 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               {% if is_post() %}
-                <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
+                <a href="{{ url_for(post.path) }}<i class="fa fa-tag"></i>SOHUCS" itemprop="discussionUrl">
                   <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
                 </a>
               {% else %}
-                <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
+                <a href="{{ url_for(post.path) }}<i class="fa fa-tag"></i>SOHUCS" itemprop="discussionUrl">
                   <span id="url::{{ post.permalink }}" class="cy_cmt_count" data-xid="{{ post.path }}" itemprop="commentsCount" ></span>
                 </a>
               {% endif %}
             {% endif %}
           {% endif %}
 
-          {# LeanCould PageView #}
+          {<i class="fa fa-tag"></i> LeanCould PageView <i class="fa fa-tag"></i>}
           {% if theme.leancloud_visitors.enable %}
              <span id="{{ url_for(post.path) }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
                <span class="post-meta-divider">|</span>
@@ -241,7 +241,7 @@
 
     <div class="post-body{% if theme.han %} han-init-context{% endif %}" itemprop="articleBody">
 
-      {# Gallery support #}
+      {<i class="fa fa-tag"></i> Gallery support <i class="fa fa-tag"></i>}
       {% if post.photos and post.photos.length %}
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
           {% set COLUMN_NUMBER = 3 %}
@@ -255,7 +255,7 @@
             {% if loop.index0 % COLUMN_NUMBER === 2 %}</div>{% endif %}
           {% endfor %}
 
-          {# Append end tag for `post-gallery-row` when (photos size mod COLUMN_NUMBER) is less than COLUMN_NUMBER #}
+          {<i class="fa fa-tag"></i> Append end tag for `post-gallery-row` when (photos size mod COLUMN_NUMBER) is less than COLUMN_NUMBER <i class="fa fa-tag"></i>}
           {% if post.photos.length % COLUMN_NUMBER > 0 %}</div>{% endif %}
         </div>
       {% endif %}
@@ -274,7 +274,7 @@
           {{ post.excerpt }}
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#{{ __('post.more') }}{% endif %}" rel="contents">
+            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}<i class="fa fa-tag"></i>{{ __('post.more') }}{% endif %}" rel="contents">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
@@ -285,7 +285,7 @@
           {% if content.length > theme.auto_excerpt.length %}...{% endif %}
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#{{ __('post.more') }}{% endif %}" rel="contents">
+            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}<i class="fa fa-tag"></i>{{ __('post.more') }}{% endif %}" rel="contents">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
@@ -330,7 +330,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}

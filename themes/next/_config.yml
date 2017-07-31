@@ -500,8 +500,7 @@ local_search:
 exturl: false
 
 
-reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
-wechatpay: /images/wechat.png
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！（支持微信和支付宝）
 alipay: /images/alipay.png
 
 
