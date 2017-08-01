@@ -322,7 +322,7 @@ disqus:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-  enable: true
+  enable: false
   githubID: wuhang2003
   repo: blog
   ClientID: d278a2fdfde64d6135eb
