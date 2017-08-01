@@ -72,5 +72,6 @@
     </div>
   {% endif %}
 </nav>
+    <div class="top-scroll-bar"></div>
 
 {% include '../_custom/header.swig' %}

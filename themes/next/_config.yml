@@ -327,13 +327,13 @@ gitment:
   repo: blog
   ClientID: d278a2fdfde64d6135eb
   ClientSecret: 05436187d86d9c8f6758607e5f0f5d9b7e05d913
-  lazy: false
+  lazy: true
 
 # changyan
 changyan:
-  enable: false
-  appid:
-  appkey:
+  enable: true
+  appid: cyt8R8LII
+  appkey: prod_631373fcfe1fe76b2823a78c574db7fa
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
