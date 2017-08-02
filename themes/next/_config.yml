@@ -331,7 +331,7 @@ gitment:
 
 # changyan
 changyan:
-  enable: true
+  enable: false
   appid: cyt8XhjXL
   appkey: 3f8a44f636766c98b4773665a60b13d4
 
@@ -341,7 +341,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8yOTkyOC82NDkz
 
 # Baidu Share
 # Available value:
