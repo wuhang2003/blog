@@ -333,7 +333,7 @@ gitment:
 changyan:
   enable: true
   appid: cyt8R8LII
-  appkey: 417bd80e77fdc186eb1f1bfcd8f5402a
+  appkey: prod_631373fcfe1fe76b2823a78c574db7fa
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
